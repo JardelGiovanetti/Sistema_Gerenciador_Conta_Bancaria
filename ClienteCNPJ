@@ -1,0 +1,34 @@
+package banco;
+
+public class ClienteCnpj extends Cliente{
+	
+	private int cnpj; 
+	private Cartao cartao;
+
+	public ClienteCnpj(String nome, String telefone, Endereco endereco, int cnpj, Cartao cartao) {
+		super(nome, telefone, cnpj, endereco);
+		this.cnpj = cnpj;
+		this.cartao = cartao;
+	}
+	
+	public ClienteCnpj(String nome, String telefone, Endereco endereco, int cnpj) {
+		super(nome, telefone, cnpj, endereco);
+		this.cnpj = cnpj;
+	}
+
+	public int getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(int cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public Cartao getCartao() {
+		return cartao;
+	}
+
+	public void setCartao(Cartao cartao) {
+		this.cartao = cartao;
+	}
+}
