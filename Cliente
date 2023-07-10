@@ -1,0 +1,49 @@
+package banco;
+
+public abstract class Cliente {
+
+	protected String nome;
+	protected String telefone;
+	protected int documento;
+	protected Endereco endereco; 
+	
+	public Cliente(String nome, String telefone, int Documento, Endereco endereco) {
+		this.nome = nome;
+		this.telefone = telefone;	
+		this.documento = 0;
+		this.endereco = endereco;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	public int getDocumento() {
+		return documento;
+	}
+
+	public void setDocumento(int documento) {
+		this.documento = documento;
+	}
+}
+
