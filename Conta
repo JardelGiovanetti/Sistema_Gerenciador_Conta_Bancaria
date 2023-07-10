@@ -1,0 +1,32 @@
+package banco;
+
+public abstract class Conta {
+
+	protected int numAgencia; 
+	protected int numConta; 
+	protected int senha; 
+	protected Cliente titularConta; 
+	
+	public Conta(int numAgencia, int numConta, int senha, Cliente titularConta) {
+		this.numAgencia = numAgencia;
+		this.numConta = numConta;
+		this.senha = senha;
+		this.titularConta = titularConta;
+	}
+	
+	
+	public abstract void realizarDeposito (double valor);
+	
+	public abstract void realizarSaque (double valor, int senha);
+	
+	public abstract void verificarExtrato (int senha, int conta, int agencia, int cpf, int cnpj);
+	
+	public abstract void realizarTransferencia (int senha, int contaOrigem, int agenciaOrigem, int contaDestino, int agenciaDestino, double valor);
+	
+	public abstract void realizarPagamento(int senha, int conta, int agencia, int valor);
+	
+	public abstract void solicitarCartao (int senha, int conta, int agencia);
+		
+	public abstract void cancelarCartao (int senha, int conta, int agencia);
+	
+}
