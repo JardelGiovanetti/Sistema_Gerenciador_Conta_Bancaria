@@ -1,0 +1,14 @@
+package banco;
+
+public class Cartao {
+	
+	
+	private int numeroCartao; 
+	private int estado; //1 para cartao ativo 0 para cartao bloqueado
+	
+	public Cartao(int numeroCartao, int estado) {
+		this.numeroCartao = numeroCartao;
+		this.estado = estado;
+	}
+
+	public int getNumeroCartao() {
