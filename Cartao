@@ -12,3 +12,18 @@ public class Cartao {
 	}
 
 	public int getNumeroCartao() {
+		return numeroCartao;
+	}
+
+	public void setNumeroCartao(int numeroCartao) {
+		this.numeroCartao = numeroCartao;
+	}
+
+	public int getEstado() {
+		return estado;
+	}
+
+	public void setEstado(int estado) {
+		this.estado = estado;
+	}
+}
